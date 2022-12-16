@@ -1,0 +1,352 @@
+/*******************************TAG SELECTORS*********************************/
+body {
+  margin: 0;
+  text-align: center;
+  background-color: #a1cae2;
+  color: #ffffff;
+  font-family: itc-avant-garde-gothic-pro, sans-serif;
+}
+
+hr {
+  border-color: #fff;
+  border-style: solid none none;
+  border-width: 5px;
+  height: 0;
+  width: 50%;
+}
+
+h1 {
+  font-size: 5rem;
+  font-family: itc-avant-garde-gothic-pro, sans-serif;
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: itc-avant-garde-gothic-pro, sans-serif;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+table {
+  align-items: center;
+  cellpadding: 20;
+  cellspacing: 10;
+  
+}
+
+
+
+
+
+/***********************************CLASS SELECTORS***************************/
+
+/****image slide*****/
+
+
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #a1cae2;
+  color: white;
+  padding: 16px;
+  font-size: 3rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #a1cae2;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image_slide {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #a1cae2;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+/*carosel image settings*/
+.ig {
+max-width: 35%;  
+}
+
+.mag {
+max-width: 35%;  
+
+
+}
+
+.mag2 {
+max-width: 70%;  
+
+
+}
+
+
+/***these are the top container landing area header, ufo, cloud and mountain image codes*******/
+.ufo {
+  width: 30px;
+  height: 15px;
+  padding-top: 0px;
+  position: absolute;
+  animation: mymove2 60s infinite;
+    z-index: 5;
+
+}
+.bottomcloud {
+  position: absolute;
+  animation: mymove3 60s infinite;
+    z-index: 5;
+
+}
+
+.topcloud {
+  position: absolute;
+  top: 50px;
+  right: 250px;
+  animation: mymove 60s infinite;
+    z-index: 5;
+
+}
+
+.img-hor-vert {
+  transform: rotate(.5turn);
+}
+
+.lib {
+  text-decoration: underline;
+}
+
+/*********these are codes for styling all other images**********/
+.ebaylogo {
+  width: 75%;
+  height: 75%;
+  border: 5px solid black;
+}
+.warhero {
+  width: 25%;
+  height: 25%;
+  border-radius: 90%;
+  border: 5px solid black;
+  position: relative;
+}
+.formerchef {
+  position: relative;
+  right: 5%;
+}
+.toprated {
+  position: relative;
+  left: 5%;
+}
+.work {
+  width: 40%;
+  length: 40%;
+  border: 5px solid black;
+  border-radius: 50%;
+}
+.ebay {
+  text-align: center;
+}
+/*******these are image animation codes******/
+@keyframes mymove {
+  from {
+    top: 0px;
+  }
+
+  to {
+    top: 300px;
+  }
+}
+
+@keyframes mymove2 {
+  from {
+    left: 5px;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes mymove3 {
+  from {
+    left: 350px;
+  }
+
+  to {
+    left: 420px;
+  }
+}
+
+/*******these are text animation codes*****/
+
+
+/****this is the text shine code*****/
+.effect-shine2 {
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 100%;
+  }
+
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+.effect-shine:hover {
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+/***this is hover text code****/
+.tags {
+  display: inline;
+  position: relative;
+}
+
+.tags:hover:after {
+  background: #333;
+  background: rgba(0, 0, 0, .8);
+  border-radius: 5px;
+  bottom: 34px;
+  color: #b8de6f;
+  content: attr(gloss);
+  left: 0;
+  padding: 5px 15px;
+  position: absolute;
+  z-index: 98;
+  width: 150px;
+  font-size: 20px;
+}
+
+.tags:hover:before {
+  border: solid;
+  border-color: #333 transparent;
+  border-width: 0 6px 6px 6px;
+  bottom: -4px;
+  content: "";
+  left: 50%;
+  position: absolute;
+  z-index: 99;
+}
+
+
+
+@media(max-width: 1000px) {
+  h1 {
+  font-size: 2.75rem;
+  }
+
+  h2 {
+    font-size: 2.125rem;
+  }
+
+  .topcloud  {
+    max-width: 25%;
+  }
+
+  .bottomcloud  {
+    max-width: 25%;
+  }
+
+}
+
+@media(max-width: 800px) {
+
+}
